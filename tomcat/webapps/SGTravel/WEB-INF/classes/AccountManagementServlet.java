@@ -21,7 +21,7 @@ public class AccountManagementServlet extends HttpServlet {  // JDK 6 and above 
          // For MySQL
          Class.forName("com.mysql.jdbc.Driver");  // Needed for JDK9/Tomcat9
          conn = DriverManager.getConnection(
-                 "jdbc:mysql://localhost:3306/SGTravel?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC", "myuser", "xxxx");  // <<== Check
+            "jdbc:mysql://localhost:3306/SGTravel?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC", "myuser", "xxxx");  // <<== Check
 
          // Step 2: Create a "Statement" object inside the "Connection"
          stmt = conn.createStatement();
@@ -31,7 +31,7 @@ public class AccountManagementServlet extends HttpServlet {  // JDK 6 and above 
          HttpSession session = request.getSession(false);
          if (session == null) {
             out.println("<ul><li><a href='register.html'> Create Account </a></li><li><a href='login.html'>Login</a></li></ul>");
-            out.println("</div></div></section><div class='footer'> <p> IM2073 Course Project: Yet Another Trip Advisor.<br/>Presented by Liangyu and Lixian <br/><br/></p> </div> </body></html>");
+            out.println("</div></div></section><div class='footer'> <p> IM2073 Course Project: Yet Another Trip Advisor.<br/>Presented by Xu Peisen and Huang Xinwei <br/><br/></p> </div> </body></html>");
          } else {
             synchronized (session) {
                userName = (String) session.getAttribute("username");
@@ -59,7 +59,7 @@ public class AccountManagementServlet extends HttpServlet {  // JDK 6 and above 
                out.println("</form></div><br/>");
                 ++count;
             }
-            out.println("<h6 align='center'><=========== 3 records found ===========></h6></div> </div> </section><!--========================== Footer ============================--> <div class='footer'> <p> IM2073 Course Project: Yet Another Trip Advisor.<br/>Presented by Liangyu and Lixian <br/><br/></p> </div> </body></html>");
+            out.println("<h6 align='center'><=========== 3 records found ===========></h6></div> </div> </section><!--========================== Footer ============================--> <div class='footer'> <p> IM2073 Course Project: Yet Another Trip Advisor.<br/>Presented by Xu Peisen and Huang Xinwei <br/><br/></p> </div> </body></html>");
           }
 
 

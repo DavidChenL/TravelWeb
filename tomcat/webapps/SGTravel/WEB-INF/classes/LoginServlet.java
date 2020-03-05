@@ -18,7 +18,7 @@ public class LoginServlet extends HttpServlet {
          out.println("<h2>Login</h2>");
          Class.forName("com.mysql.jdbc.Driver");
          conn = DriverManager.getConnection(
-                 "jdbc:mysql://localhost:3306/SGTravel?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC", "myuser", "xxxx");  // <<== Check
+            "jdbc:mysql://localhost:3306/SGTravel?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC", "myuser", "xxxx");   // Get a connection from the pool
          stmt = conn.createStatement();
 
          // Retrieve and process request parameters: username and password
