@@ -21,7 +21,7 @@ public class RegisterServlet extends HttpServlet {  // JDK 6 and above only
          // For MySQL
          Class.forName("com.mysql.jdbc.Driver");  // Needed for JDK9/Tomcat9
          conn = DriverManager.getConnection(
-                 "jdbc:mysql://localhost:3306/SGTravel?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC", "myuser", "xxxx");  // <<== Check
+            "jdbc:mysql://localhost:3306/SGTravel?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC", "myuser", "xxxx");  // <<== Check
 
          // Step 2: Create a "Statement" object inside the "Connection"
          stmt = conn.createStatement();
