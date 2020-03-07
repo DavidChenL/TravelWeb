@@ -423,7 +423,7 @@ insert into Plan_Date values (016003, 016, '2020-10-01', '2020-10-02', 10, 700, 
 insert into Plan_Date values (017001, 017, '2020-06-01', '2020-06-02', 0, 600, 0, 0);
 insert into Plan_Date values (017002, 017, '2020-07-01', '2020-07-02', 15, 500, 0, 0);
 insert into Plan_Date values (017003, 017, '2020-08-01', '2020-08-02', 10, 500, 0, 0);
-
+insert into Plan_Date values (017004, 017, '2020-08-21', '2020-09-02', 15, 500, 0, 0);
 
 
 
