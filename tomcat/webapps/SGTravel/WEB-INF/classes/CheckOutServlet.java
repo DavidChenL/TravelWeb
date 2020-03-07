@@ -65,7 +65,7 @@ public class CheckOutServlet extends HttpServlet {  // JDK 6 and above only
          out.println("<div class = 'button' align='center'><input type='submit' value='purchase' /></div>");
          out.println("</form>");
 
-         out.println("</div> </div></section><!--========================== Footer ============================--> <div class='footer'> <p> IM2073 Course Project: SGTravel.<br/>Presented by Lin Lixian and Chen Liangyu<br/><br/></p> </div></body></html>");
+         out.println("</div> </div></section><!--========================== Footer ============================--> <div class='footer'> <p> IM2073 Course Project: SGTravel.<br/>Presented by Liangyu and Lixian <br/><br/></p> </div></body></html>");
       } catch (SQLException ex) {
          ex.printStackTrace();
      } catch (ClassNotFoundException ex) {
