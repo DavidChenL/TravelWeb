@@ -315,3 +315,61 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 05-Mar-2020 21:43:18.956 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-9999"]
 05-Mar-2020 21:43:18.968 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
 05-Mar-2020 21:43:18.976 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [3,035] milliseconds
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+07-Mar-2020 00:01:17.414 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.30
+07-Mar-2020 00:01:17.421 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Dec 7 2019 16:42:04 UTC
+07-Mar-2020 00:01:17.421 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.30.0
+07-Mar-2020 00:01:17.421 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+07-Mar-2020 00:01:17.422 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.14.6
+07-Mar-2020 00:01:17.422 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86_64
+07-Mar-2020 00:01:17.422 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/jdk-11.0.1.jdk/Contents/Home
+07-Mar-2020 00:01:17.422 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.1+13-LTS
+07-Mar-2020 00:01:17.423 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+07-Mar-2020 00:01:17.423 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/lixianlin/myWebProject/TravelWeb/tomcat
+07-Mar-2020 00:01:17.423 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/lixianlin/myWebProject/TravelWeb/tomcat
+07-Mar-2020 00:01:17.464 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+07-Mar-2020 00:01:17.464 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+07-Mar-2020 00:01:17.465 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+07-Mar-2020 00:01:17.465 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/lixianlin/myWebProject/TravelWeb/tomcat/conf/logging.properties
+07-Mar-2020 00:01:17.465 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+07-Mar-2020 00:01:17.465 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+07-Mar-2020 00:01:17.465 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+07-Mar-2020 00:01:17.466 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+07-Mar-2020 00:01:17.466 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+07-Mar-2020 00:01:17.466 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/lixianlin/myWebProject/TravelWeb/tomcat
+07-Mar-2020 00:01:17.466 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/lixianlin/myWebProject/TravelWeb/tomcat
+07-Mar-2020 00:01:17.466 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/lixianlin/myWebProject/TravelWeb/tomcat/temp
+07-Mar-2020 00:01:17.466 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/lixianlin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+07-Mar-2020 00:01:18.146 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-9999"]
+07-Mar-2020 00:01:18.212 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+07-Mar-2020 00:01:18.216 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [1,267] milliseconds
+07-Mar-2020 00:01:18.322 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+07-Mar-2020 00:01:18.323 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.30]
+07-Mar-2020 00:01:18.341 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/lixianlin/myWebProject/TravelWeb/tomcat/webapps/ebookshop]
+07-Mar-2020 00:01:19.680 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-Mar-2020 00:01:19.835 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/lixianlin/myWebProject/TravelWeb/tomcat/webapps/ebookshop] has finished in [1,494] ms
+07-Mar-2020 00:01:19.836 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/lixianlin/myWebProject/TravelWeb/tomcat/webapps/docs]
+07-Mar-2020 00:01:20.177 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-Mar-2020 00:01:20.180 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/lixianlin/myWebProject/TravelWeb/tomcat/webapps/docs] has finished in [344] ms
+07-Mar-2020 00:01:20.181 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/lixianlin/myWebProject/TravelWeb/tomcat/webapps/manager]
+07-Mar-2020 00:01:20.534 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-Mar-2020 00:01:20.551 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/lixianlin/myWebProject/TravelWeb/tomcat/webapps/manager] has finished in [369] ms
+07-Mar-2020 00:01:20.552 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/lixianlin/myWebProject/TravelWeb/tomcat/webapps/examples]
+07-Mar-2020 00:01:21.255 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-Mar-2020 00:01:21.294 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/lixianlin/myWebProject/TravelWeb/tomcat/webapps/examples] has finished in [741] ms
+07-Mar-2020 00:01:21.294 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/lixianlin/myWebProject/TravelWeb/tomcat/webapps/ROOT]
+07-Mar-2020 00:01:21.572 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-Mar-2020 00:01:21.575 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/lixianlin/myWebProject/TravelWeb/tomcat/webapps/ROOT] has finished in [281] ms
+07-Mar-2020 00:01:21.575 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/lixianlin/myWebProject/TravelWeb/tomcat/webapps/hello]
+07-Mar-2020 00:01:21.834 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-Mar-2020 00:01:21.839 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/lixianlin/myWebProject/TravelWeb/tomcat/webapps/hello] has finished in [263] ms
+07-Mar-2020 00:01:21.839 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/lixianlin/myWebProject/TravelWeb/tomcat/webapps/host-manager]
+07-Mar-2020 00:01:22.111 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-Mar-2020 00:01:22.113 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/lixianlin/myWebProject/TravelWeb/tomcat/webapps/host-manager] has finished in [274] ms
+07-Mar-2020 00:01:22.114 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/lixianlin/myWebProject/TravelWeb/tomcat/webapps/SGTravel]
+07-Mar-2020 00:01:22.397 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-Mar-2020 00:01:22.399 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/lixianlin/myWebProject/TravelWeb/tomcat/webapps/SGTravel] has finished in [286] ms
+07-Mar-2020 00:01:22.410 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-9999"]
+07-Mar-2020 00:01:22.428 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+07-Mar-2020 00:01:22.432 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [4,215] milliseconds
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.

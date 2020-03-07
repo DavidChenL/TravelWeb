@@ -78,7 +78,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 #header #logo h1 a, #header #logo h1 a:hover {
   color: #fff;
   padding-left: 10px;
-  border-left: 4px solid #ffb902;
+  border-left: 4px solid #6a92cd;
 }
 
 #header #logo img {
@@ -188,7 +188,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 }
 
 .nav-menu li:hover > a, .nav-menu > .menu-active > a {
-  color: #ffb902;
+  color: #6a92cd;
 }
 
 .nav-menu > li {
@@ -216,7 +216,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 }
 
 .nav-menu ul li:hover > a {
-  color: #ffb902;
+  color: #6a92cd;
 }
 
 .nav-menu ul ul {
@@ -247,7 +247,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
     text-align: right;
 
-    background: #ffb902;
+    background: #6a92cd;
 }
 
 .loginregister ul li {
@@ -274,7 +274,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	align-self: center;
 	text-align: center;
 	padding: 60px 0 0px 0;
-	background: #ffb900;
+	background: #6a92cd;
     border: none;
     border-radius: 3px;
     padding: 10px 30px;
@@ -328,7 +328,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
   display: block;
   width: 40px;
   height: 3px;
-  background: #ffb902;
+  background: #6a92cd;
   bottom: 0;
   left: calc(50% - 20px);
 }
@@ -421,7 +421,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 
 #hotdeals .hotdeals-col:hover i {
-  color: #ffb902;
+  color: #6a92cd;
 }
 
 #hotdeals .hotdeals-col h2 {
@@ -438,7 +438,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 }
 
 #hotdeals .hotdeals-col h2 a:hover {
-  color: #ffb902;
+  color: #6a92cd;
 }
 
 #hotdeals .hotdeals-col p {
@@ -876,7 +876,7 @@ panneldetail
 
 
 #plandetail .comment{
-  background-color: #ffb902;
+  background-color: #6a92cd;
     top: 50%; left: 50%;
     width: x; height: y;
     margin: -y/2 0 0 -x/2;
@@ -1102,7 +1102,7 @@ h1 {
 	transition: all 0.3s ease-out;
 }
 .resp-tab-active {
-    color: #ffb900;
+    color: #6a92cd;
 	background: #000;
 }
 .resp-tabs-container {
@@ -1299,7 +1299,7 @@ ul.w3agile {
 	color: #fff;
 }
 .footer a {
-	color: #ffb900;
+	color: #6a92cd;
 	text-decoration: none;
 }
 .footer a:hover {
@@ -1459,7 +1459,7 @@ input.name,input.date,input.num, input .comment{
     cursor: pointer;
     border: none;
     border-radius: 3px;
-    background: #ffb900;
+    background: #6a92cd;
     outline: none;
     font-weight: 400;
     text-transform: capitalize;
