@@ -31,7 +31,7 @@ public class AccountManagementServlet extends HttpServlet {  // JDK 6 and above 
          HttpSession session = request.getSession(false);
          if (session == null) {
             out.println("<ul><li><a href='register.html'> Create Account </a></li><li><a href='login.html'>Login</a></li></ul>");
-            out.println("</div></div></section><div class='footer'> <p> IM2073 Course Project: SGTravel.<br/>Presented by Liangyu and Lixian <br/><br/></p> </div> </body></html>");
+            out.println("</div></div></section><div class='footer'> <p> IM2073 Course Project: SGTravel.<br/>Presented by Lin Lixian and Chen Liangyu<br/><br/></p> </div> </body></html>");
          } else {
             synchronized (session) {
                userName = (String) session.getAttribute("username");
@@ -59,7 +59,7 @@ public class AccountManagementServlet extends HttpServlet {  // JDK 6 and above 
                out.println("</form></div><br/>");
                 ++count;
             }
-            out.println("<h6 align='center'><=========== 3 records found ===========></h6></div> </div> </section><!--========================== Footer ============================--> <div class='footer'> <p> IM2073 Course Project: SGTravel.<br/>Presented by Liangyu and Lixian <br/><br/></p> </div> </body></html>");
+            out.println("<h6 align='center'><=========== 3 records found ===========></h6></div> </div> </section><!--========================== Footer ============================--> <div class='footer'> <p> IM2073 Course Project: SGTravel.<br/>Presented by Lin Lixian and Chen Liangyu<br/><br/></p> </div> </body></html>");
           }
 
 
