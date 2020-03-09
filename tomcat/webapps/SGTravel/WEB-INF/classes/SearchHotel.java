@@ -42,9 +42,9 @@ public class SearchHotel extends HttpServlet {  // JDK 6 and above only
          // Step 2: Create a "Statement" object inside the "Connection"
          stmt = conn.createStatement();
          String startCity = request.getParameter("startCity");
-         String city = request.getParameter("city");
+         String room = request.getParameter("room");
          int numOfTravellers = Integer.parseInt(request.getParameter("numTravellers"));
-         if (city == null || startCity == null) {
+         if (city == null || room == null) {
             out.println("<p align='center'>Please go back and search again. </p></div></section><div class='footer'> <p> IM2073 Course Project: SGTravel.<br/>Presented by Lin Lixian and Chen Liangyu<br/><br/></p> </div></body></html>");
             return; // Exit doGet()
         }
@@ -56,15 +56,15 @@ public class SearchHotel extends HttpServlet {  // JDK 6 and above only
          //   return; // Exit doGet()
          //}
         out.println("<p align='center'>Thank you for your search</p><div class='row hotdeals-cols'>");
-         String date1 = request.getParameter("startDate");
-         String date2 = request.getParameter("endDate");
+         String date1 = request.getParameter("inDate");
+         String date2 = request.getParameter("outDate");
 
 //
-         java.util.Date sDate = new SimpleDateFormat("MM/dd/yyyy").parse(date1);
-         java.util.Date eDate = new SimpleDateFormat("MM/dd/yyyy").parse(date2);
+         java.util.Date iDate = new SimpleDateFormat("MM/dd/yyyy").parse(date1);
+         java.util.Date oDate = new SimpleDateFormat("MM/dd/yyyy").parse(date2);
 
-         java.sql.Date startDate = new java.sql.Date(sDate.getTime());
-         java.sql.Date endDate = new java.sql.Date(eDate.getTime());
+         java.sql.Date inDate = new java.sql.Date(iDate.getTime());
+         java.sql.Date outDate = new java.sql.Date(oDate.getTime());
          String sqlStr = "SELECT Plan.planID, Plan.planTitle, Plan.country, Plan.img_path, Plan_Date.price, Plan.duration, Plan_Date.startDate, Plan_Date.endDate, Plan_Date.remaining_seat, Plan_Date.itemID FROM Plan, Plan_City, City, Plan_Date WHERE ";
 
          if(city != "0"){

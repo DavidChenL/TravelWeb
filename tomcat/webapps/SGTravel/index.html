@@ -217,10 +217,9 @@
                                 <div class='register agileits'>
                                     <form method='get' class='agile_form' action='search_hotel'>
 
-
                                         <div class='list_agileits_w3layouts'>
                                             <div class='section_class_agileits sec-left'>
-                                                <select>
+                                                <select type='text' name='destinationCity'>
                                                     <option value='0'>Destination City</option>
                                                     <option value='Beijing'>Beijing</option>
                                                     <option value='Singapore'>Singapore</option>
@@ -236,11 +235,11 @@
                                             </div>
 
                                             <div class='section_class_agileits sec-right'>
-                                                <select>
+                                                <select type="text" name='room'>
                                                     <option value='0'>Rooms</option>
                                                     <option value='1'>Single Room</option>
-                                                    <option value='3'>Double Room</option>
-                                                    <option value='2'>Suit Room</option>
+                                                    <option value='2'>Double Room</option>
+                                                    <option value='3'>Suit Room</option>
 
                                                 </select>
                                             </div>
@@ -249,17 +248,16 @@
                                         </div>
 
                                         <input placeholder='Check in date' class='date' id='datepicker3' type='text'
-                                               value='' onfocus='this.value = '';' onblur='if (this.value == '')
+                                               name='inDate' value='' onfocus='this.value = '';' onblur='if (this.value == '')
                                         {this.value = '';}' required=''/>
                                         <input placeholder='Check out date' class='date' id='datepicker4' type='text'
-                                               value='' onfocus='this.value = '';' onblur='if (this.value == '')
+                                               name='outDate'value='' onfocus='this.value = '';' onblur='if (this.value == '')
                                         {this.value = '';}' required=''/>
-
 
                                         <div class='list_agileits_w3layouts'>
                                             <div class='section_class_agileits sec-left'>
-                                                <input placeholder='Number of Travellers' class='num' type='number'
-                                                       min='0' name='numTravellers'/>
+                                                <input placeholder='Number of Rooms' class='num' type='number'
+                                                       min='0' name='numRooms'/>
                                             </div>
 
                                             <div class='clear'></div>
@@ -313,10 +311,6 @@
                                         <input placeholder='Departure date' class='date' id='datepicker5' type='text'
                                                name='departureDate' value='' onfocus='this.value = '';' onblur='if (this.value == '')
                                         {this.value = '';}' required=''/>
-<!--                                        <input placeholder='Return date' class='date' id='datepicker6' type='text'-->
-<!--                                               name='arrivalDate' value='' onfocus='this.value = '';' onblur='if (this.value == '')-->
-<!--                                        {this.value = '';}' required=''/>-->
-
 
                                         <div class='list_agileits_w3layouts'>
                                             <div class='section_class_agileits sec-left'>

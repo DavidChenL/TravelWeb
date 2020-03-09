@@ -426,5 +426,33 @@ insert into Plan_Date values (017003, 017, '2020-08-01', '2020-08-02', 10, 500, 
 insert into Plan_Date values (017004, 017, '2020-08-21', '2020-09-02', 15, 500, 0, 0);
 
 
+drop table if exists Hotel;
+create table Hotel
+	(
+		hotelID int,
+		hotelName varchar(50),
+		destinationCity varchar(50),
+		room varchar(20),
+		inDate DATE,
+		outDate DATE,
+		remaining_room int,
+		price int
+	);
 
 
+insert into Hotel values (1, 'The Jefferson', 'Beijing', 'Single', '2020-05-01', '2020-05-03', 10, 600);
+insert into Hotel values (1, 'The Jefferson', 'Beijing', 'Single', '2020-04-01', '2020-05\-03', 10, 600);
+insert into Hotel values (1, 'The Jefferson', 'Beijing', 'Single', '2020-02-05', '2020-04-30', 10, 600);
+insert into Hotel values (1, 'The Jefferson', 'Beijing', 'Single', '2020-03-01', '2020-05-03', 10, 600);
+insert into Hotel values (1, 'The Jefferson', 'Beijing', 'Single', '2020-03-01', '2020-05-03', 10, 600);
+insert into Hotel values (1, 'The Jefferson', 'Beijing', 'Single', '2020-03-01', '2020-05-03', 10, 600);
+insert into Hotel values (1, 'The Jefferson', 'Beijing', 'Single', '2020-03-01', '2020-05-03', 10, 600);
+insert into Hotel values (1, 'The Jefferson', 'Beijing', 'Single', '2020-05-01', '2020-05-03', 10, 600);
+insert into Hotel values (1, 'The Jefferson', 'Beijing', 'Single', '2020-05-01', '2020-05-03', 10, 600);
+insert into Hotel values (2, 'Mandarin Oriental', 'Singapore', 'Single', '2020-05-01', '2020-05-03', 10, 780);
+insert into Hotel values (3, 'Four Seasons Resort', 'Shanghai', 'Single', '2020-05-01', '2020-05-03', 10, 780);
+insert into Hotel values (4, 'Knights Inn', 'Beijing', 'Double', '2020-05-01', '2020-05-03', 10, 380);
+insert into Hotel values (5, 'Astro Resort', 'London', 'Double', '2020-05-01', '2020-05-03', 10, 380);
+insert into Hotel values (6, 'Astro Resort', 'Paris', 'Double', '2020-05-01', '2020-05-03', 10, 380);
+insert into Hotel values (7, 'The Harbor Hotel', 'Tokyo', 'Double', '2020-05-01', '2020-05-03', 10, 380);
+insert into Hotel values (8, 'The Enchanted Garden', 'New York', w 'Double', '2020-05-01', '2020-05-03', 10, 480);
