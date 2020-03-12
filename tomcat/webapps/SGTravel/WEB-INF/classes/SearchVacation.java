@@ -65,7 +65,7 @@ public class SearchVacation extends HttpServlet {  // JDK 6 and above only
 
          java.sql.Date startDate = new java.sql.Date(sDate.getTime());
          java.sql.Date endDate = new java.sql.Date(eDate.getTime());
-         String sqlStr = "SELECT Plan.planID, Plan.planTitle, Plan.country, Plan.img_path, Plan_Date.price, Plan.duration, Plan_Date.startDate, Plan_Date.endDate, Plan_Date.remaining_seat, Plan_Date.itemID FROM Plan, Plan_City, City, Plan_Date WHERE ";
+         String sqlStr = "SELECT Plan.planID, Plan.planTitle, Plan.country, Plan.img_path, Plan_Date.price, Plan.duration, Plan_Date.startDate, Plan_Date.endDate, Plan_Date.remainingSeat, Plan_Date.itemID FROM Plan, Plan_City, City, Plan_Date WHERE ";
 
          if(city != "0"){
                sqlStr += "City.city = "
@@ -76,7 +76,7 @@ public class SearchVacation extends HttpServlet {  // JDK 6 and above only
          }
 
             sqlStr += "Plan.planID = Plan_Date.planID AND Plan_Date.startDate >= "
-               + "'" + startDate + "'" + " AND Plan_Date.endDate <= " + "'" + endDate + "'" + " AND Plan_Date.remaining_seat >= " + numOfTravellers;
+               + "'" + startDate + "'" + " AND Plan_Date.endDate <= " + "'" + endDate + "'" + " AND Plan_Date.remainingSeat >= " + numOfTravellers;
 
 
 
@@ -105,7 +105,7 @@ public class SearchVacation extends HttpServlet {  // JDK 6 and above only
             out.println("<br/>Plane Title: " + rset.getString("planTitle"));
             out.println("<br/>Duration: " +rset.getDate("startDate")+" - "+rset.getDate("endDate"));
             out.println("<br/>Price: $" + rset.getInt("price"));
-            out.println("<br/> Remaining Seats: "+rset.getInt("remaining_seat"));
+            out.println("<br/> Remaining Seats: "+rset.getInt("remainingSeat"));
             //out.println("<br/><a href='#' onclick='document.getElementById('myform').submit()' >Submit</a></p></form>");
             out.println("<div class = 'button' align='center'><input type='submit' value='Check' ></div></form>");
             out.println("<form method='post' action='checkout'>");
