@@ -44,44 +44,28 @@ public class SearchHotel extends HttpServlet {  // JDK 6 and above only
          String destinationCity = request.getParameter("destinationCity");
          String room = request.getParameter("room");
          int numRooms = Integer.parseInt(request.getParameter("numRooms"));
-         if (destinationCity == null || room == null) {
+         String date1 = request.getParameter("inDate");
+         String date2 = request.getParameter("outDate");
+         java.util.Date iDate = new SimpleDateFormat("MM/dd/yyyy").parse(date1);
+         java.util.Date oDate = new SimpleDateFormat("MM/dd/yyyy").parse(date2);
+         java.sql.Date inDate = new java.sql.Date(iDate.getTime());
+         java.sql.Date outDate = new java.sql.Date(oDate.getTime());
+
+         if (destinationCity == null || room == null || iDate.compareTo(oDate) > 0) {
             out.println("<p align='center'>Please go back and search again. </p></div></section><div class='footer'> <p> IM2073 Course Project: SGTravel.<br/>Presented by Lin Lixian and Chen Liangyu<br/><br/></p> </div></body></html>");
             return; // Exit doGet()
         }
-         // Step 3: Execute a SQL SELECT query
-         //String[] travelPlans = request.getParameterValues("plan");  // Returns an array
-//
-         // if (travelPlans == null) {
-         //   out.println("<h2>Please go back and search again.</h2>");
-         //   return; // Exit doGet()
-         //}
+
         out.println("<p align='center'>Thank you for your search</p><div class='row hotdeals-cols'>");
-         String date1 = request.getParameter("inDate");
-         String date2 = request.getParameter("outDate");
-
-//
-         java.util.Date iDate = new SimpleDateFormat("MM/dd/yyyy").parse(date1);
-         java.util.Date oDate = new SimpleDateFormat("MM/dd/yyyy").parse(date2);
-
-         java.sql.Date inDate = new java.sql.Date(iDate.getTime());
-         java.sql.Date outDate = new java.sql.Date(oDate.getTime());
-         String sqlStr = "SELECT * from Hotel WHERE";
-
-         if(destinationCity != "0"){
-                sqlStr += "Hotel.destinationCity = '" + destinationCity + "' AND ";
-         }
-
-            sqlStr += "Hotel.inDateAvailable <= "
-               + "'" + inDate + "'" + " AND Hotel.inDateAvailable >= " + "'" + outDate + "'" + " AND Hotel.remainingRoom >= " + numRooms;
 
 
+         String sqlStr = "SELECT * from Hotel WHERE ";
 
+         sqlStr += "Hotel.destinationCity = '" + destinationCity + "' AND Hotel.room = '" + room + "' AND "
+                 + "Hotel.inDateAvailable <= " + "'" + inDate + "'" + " AND Hotel.outDateAvailable >= " + "'" + outDate
+                 + "'" + " AND Hotel.remainingRoom >= " + numRooms;
 
-          //sqlStr += "'" + travelPlans[0] + "'";  // First city
-//
-          //for (int i = 1; i < travelPlans.length; ++i) {
-          //sqlStr += ", '" + travelPlans[i] + "'";  // Subsequent cities need a leading commas
-       //}
+//          out.println("<br/>"+sqlStr);
 
 
          // Print an HTML page as output of query
@@ -101,16 +85,16 @@ public class SearchHotel extends HttpServlet {  // JDK 6 and above only
              out.println("<br/>Hotel ID: " + rset.getString("hotelID"));
              out.println("<br/>City: " + rset.getString("destinationCity"));
              out.println("<br/>");
-             out.println("<br/>Available Check-in Date: " + rset.getString("inDate"));
-             out.println("<br/>Latest Check-out Date: " + rset.getString("outDate"));
-//            out.println("<br/>Flight Duration: " +rset.getTime("departureTime")+" - "+rset.getTime("arrivalTime"));
+             out.println("<br/>Available Check-in Date: " + rset.getString("inDateAvailable"));
+             out.println("<br/>Latest Check-out Date: " + rset.getString("outDateAvailable"));
+             out.println("<br/>Room Type: " +rset.getString("room"));
              out.println("<br/>");
              out.println("<br/>Price: $" + rset.getInt("price"));
 //            out.println("<br/>Price: $" + 20000);
-             out.println("<br/> Remaining Rooms: " + rset.getInt("remainingRooms"));
+             out.println("<br/> Remaining Rooms: " + rset.getInt("remainingRoom"));
 //            out.println("</p>");
 //            out.println("<div class = 'button' align='center'><input type='submit' value='Check' ></div>");
-             out.println("<div class = 'button' align='center'><input type='submit' value='Check' ></div></form>");
+//             out.println("<div class = 'button' align='center'><input type='submit' value='Check' ></div></form>");
              out.println("<form method='post' action='checkout'>");
              out.println("<input type='hidden' name='hotelID' value=" + rset.getInt("hotelID") + " />");
              out.println("<div class = 'button' align='center'><input type='submit' value='Book' ></div>");
