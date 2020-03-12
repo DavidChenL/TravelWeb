@@ -78,16 +78,6 @@ public class SearchVacation extends HttpServlet {  // JDK 6 and above only
             sqlStr += "Plan.planID = Plan_Date.planID AND Plan_Date.startDate >= "
                + "'" + startDate + "'" + " AND Plan_Date.endDate <= " + "'" + endDate + "'" + " AND Plan_Date.remainingSeat >= " + numOfTravellers;
 
-
-
-
-          //sqlStr += "'" + travelPlans[0] + "'";  // First city
-//
-          //for (int i = 1; i < travelPlans.length; ++i) {
-          //sqlStr += ", '" + travelPlans[i] + "'";  // Subsequent cities need a leading commas
-       //}
-
-
          // Print an HTML page as output of query
 
          ResultSet rset = stmt.executeQuery(sqlStr); // Send the query to the server
