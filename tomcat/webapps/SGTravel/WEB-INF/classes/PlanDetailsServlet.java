@@ -107,7 +107,7 @@ public class PlanDetailsServlet extends HttpServlet {  // JDK 6 and above only
             out.println("</div></div></div>");
          }
 
-         out.println("</div></div></session><!--========================== Footer ============================--> <div class='footer'> <p> IM2073 Course Project: SGTravel.<br/>Presented by Lin Lixian and Chen Liangyu<br/><br/></p> </div></body></html>");
+         // out.println("</div></div></session><!--========================== Footer ============================--> <div class='footer'> <p> IM2073 Course Project: SGTravel.<br/>Presented by Lin Lixian and Chen Liangyu<br/><br/></p> </div></body></html>");
       } catch (SQLException ex) {
          ex.printStackTrace();
      } catch (ClassNotFoundException ex) {
