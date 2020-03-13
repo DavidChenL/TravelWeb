@@ -284,11 +284,11 @@ insert into Plan_City values (015, 30);
 insert into Plan_City values (016, 31);
 insert into Plan_City values (017, 32);
 
-insert into Flight values(001, 'SQ800', 'Singapore Airlines', 'Singapore', '2020-04-01 01:10:00', 'Beijing', '2020-04-01 07:15:00', 10, 1000);
-insert into Flight values(002, 'SQ5879', 'Singapore Airlines', 'Beijing', '2020-04-04 15:35:00', 'Singapore', '2020-04-04 21:55:00', 0, 1200);
-insert into Flight values(003, 'SQ800', 'Singapore Airlines', 'Singapore', '2020-05-01 01:10:00', 'Beijing', '2020-05-01 07:15:00', 6, 950);
-insert into Flight values(004, 'SQ5879', 'Singapore Airlines', 'Beijing', '2020-05-04 15:35:00', 'Singapore', '2020-05-04 21:55:00', 30, 900);
-insert into Flight values(005, 'SQ800', 'Singapore Airlines', 'Singapore', '2020-06-01 01:10:00', 'Beijing', '2020-06-01 07:15:00', 30, 900);
+insert into Flight values(001, 'SQ800', 'Singapore Airlines', 'Singapore', '2020-03-21 01:10:00', 'Beijing', '2020-03-21 07:15:00', 10, 1000);
+insert into Flight values(002, 'SQ5879', 'Singapore Airlines', 'Beijing', '2020-03-21 15:35:00', 'Singapore', '2020-03-21 21:55:00', 0, 1200);
+insert into Flight values(003, 'SQ800', 'Singapore Airlines', 'Singapore', '2020-03-22 01:10:00', 'Beijing', '2020-03-22 07:15:00', 6, 950);
+insert into Flight values(004, 'SQ5879', 'Singapore Airlines', 'Beijing', '2020-03-22 15:35:00', 'Singapore', '2020-03-22 21:55:00', 30, 900);
+insert into Flight values(005, 'SQ800', 'Singapore Airlines', 'Singapore', '2020-03-22 01:10:00', 'Beijing', '2020-06-01 07:15:00', 30, 900);
 insert into Flight values(006, 'SQ5879', 'Singapore Airlines', 'Beijing', '2020-06-04 15:35:00', 'Singapore', '2020-06-04 21:55:00', 30, 900);
 insert into Flight values(007, 'SQ800', 'Singapore Airlines', 'Singapore', '2020-03-01 01:10:00', 'Beijing', '2020-03-01 07:15:00', 30, 970);
 insert into Flight values(008, 'SQ5879', 'Singapore Airlines', 'Beijing', '2020-03-04 15:35:00', 'Singapore', '2020-03-04 21:55:00', 30, 900);
