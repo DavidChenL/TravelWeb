@@ -66,7 +66,7 @@ public class SearchFlight extends HttpServlet {  // JDK 6 and above only
             java.sql.Date departureDate = new java.sql.Date(dDate.getTime());
 //         java.sql.Date arrivalDate = new java.sql.Date(aDate.getTime());
             String sqlStr = "SELECT flight.flightID, flight.flightNumber, flight.airline, flight.departureCity," +
-                    "flight.departureTime, flight.arrivalCity, flight.arrivalTime, flight.remaining_seat, flight.price FROM Flight WHERE ";
+                    "flight.departureTime, flight.arrivalCity, flight.arrivalTime, flight.remainingSeat, flight.price FROM Flight WHERE ";
 
             if (arrivalCity != "0") {
                 sqlStr += "Flight.arrivalCity = "
@@ -78,7 +78,7 @@ public class SearchFlight extends HttpServlet {  // JDK 6 and above only
 
             sqlStr += "CAST(Flight.departureTime AS DATE) = " + "'" + departureDate + "'"
 //                + " AND CAST(flight.arrivalTime AS DATE) = " + "'" + arrivalDate + "'"
-                    + " AND Flight.remaining_seat >= " + numOfTravellers;
+                    + " AND Flight.remainingSeat >= " + numOfTravellers;
 
 //          out.println("<p>Debug SQL: "+ sqlStr);
 
@@ -114,10 +114,10 @@ public class SearchFlight extends HttpServlet {  // JDK 6 and above only
                 out.println("<br/>");
                 out.println("<br/>Price: $" + rset.getInt("price"));
 //            out.println("<br/>Price: $" + 20000);
-                out.println("<br/> Remaining Seats: " + rset.getInt("remaining_seat"));
+                out.println("<br/> Remaining Seats: " + rset.getInt("remainingSeat"));
 //            out.println("</p>");
 //            out.println("<div class = 'button' align='center'><input type='submit' value='Check' ></div>");
-                out.println("<div class = 'button' align='center'><input type='submit' value='Check' ></div></form>");
+//                out.println("<div class = 'button' align='center'><input type='submit' value='Check' ></div></form>");
                 out.println("<form method='post' action='checkout'>");
                 out.println("<input type='hidden' name='flightID' value=" + rset.getInt("flightID") + " />");
                 out.println("<div class = 'button' align='center'><input type='submit' value='Book' ></div>");

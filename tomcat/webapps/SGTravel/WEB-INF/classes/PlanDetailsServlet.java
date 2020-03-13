@@ -58,7 +58,7 @@ public class PlanDetailsServlet extends HttpServlet {  // JDK 6 and above only
          out.println("<br/>Plan ID: "+planID);
          out.println("<br/>Date: " + rset.getDate("startDate")+" - "+rset.getDate("endDate"));
          out.println("<br/>price: $"+rset.getInt("price"));
-         out.println("<br/>Remaining Seats: "+rset.getInt("remaining_seat")+"</p>");
+         out.println("<br/>Remaining Seats: "+rset.getInt("remainingSeat")+"</p>");
          out.println("</div><img src='"+rset.getString("img_path")+"' alt='' class='img-fluid'></img></div></section>");
 
 
@@ -99,7 +99,7 @@ public class PlanDetailsServlet extends HttpServlet {  // JDK 6 and above only
             out.println("<div class='col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp' data-wow-delay='0.1s'> <div class = 'availabledate'> <div class='portfolio-wrap'> <p>");
             out.println("<br/> Duriation: "+rset.getDate("startDate")+" - "+rset.getDate("endDate"));
             out.println("<br/> price: $"+rset.getInt("price"));
-            out.println("<br/> Remaining Seats: "+rset.getInt("remaining_seat")+"</p>");
+            out.println("<br/> Remaining Seats: "+rset.getInt("remainingSeat")+"</p>");
             out.println("<form method='post' action='detail'>");
             out.println("<input type='hidden' name='itemID' value=" + rset.getInt("itemID") + " />");
             out.println("<div class = 'button' align='center'><input type='submit' value='Check'></div>");
