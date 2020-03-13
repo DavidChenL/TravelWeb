@@ -274,11 +274,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	align-self: center;
 	text-align: center;
 	padding: 60px 0 0px 0;
-	background: #6a92cd;
-    border: none;
+	background: transparent;
+    border: 2px solid #6a92cd;
     border-radius: 3px;
     padding: 10px 30px;
-    color: #fff;
+    color: #6a92cd;
     cursor: pointer;
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
@@ -289,8 +289,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     width: 20%;
 }
 
- .buton input[type="submit"]:hover {
-    background:#e5ac16;
+ .button input[type="submit"]:hover {
+    background:#6a92cd;
 }
 
 

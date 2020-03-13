@@ -46,7 +46,7 @@ public class PurchaseServlet extends HttpServlet {  // JDK 6 and above only
          int itemID = Integer.parseInt(request.getParameter("itemID"));
          int numOfTravellers = Integer.parseInt(request.getParameter("numTravellers"));
 
-         String sqlStr = "SELECT * FROM Plan_Date WHERE itemID = " + itemID + " AND remaining_seat >= " + numOfTravellers;
+         String sqlStr = "SELECT * FROM Plan_Date WHERE itemID = " + itemID + " AND remainingSeat >= " + numOfTravellers;
          ResultSet rset = stmt.executeQuery(sqlStr);
          if(rset.next()){
 
@@ -54,7 +54,7 @@ public class PurchaseServlet extends HttpServlet {  // JDK 6 and above only
 
             sqlStr = "INSERT INTO Plan_Users VALUES ('"+uniqueID+"', "+itemID+", "+rset.getInt("planID")+", '"+userName+"', "+rset.getInt("price")+", "+numOfTravellers+")";
             int count = stmt.executeUpdate(sqlStr);
-            sqlStr = "UPDATE Plan_Date SET remaining_seat = remaining_seat - "+numOfTravellers+" WHERE itemID = "+itemID;
+            sqlStr = "UPDATE Plan_Date SET remainingSeat = remainingSeat - "+numOfTravellers+" WHERE itemID = "+itemID;
             count = stmt.executeUpdate(sqlStr);
             out.println("<h2>Thanks for purchasing!</h2>");
             out.println("<p><a href='index'>Back to main</a></p>");

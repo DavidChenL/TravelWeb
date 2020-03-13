@@ -1,26 +1,25 @@
 <!DOCTYPE html>
 <html lang='en'>
 <head>
-  <meta charset='utf-8'>
-  <title>SGTravel!</title>
-  <!-- to make it fit the screen on phone/tablet -->
-  <meta content='width=device-width, initial-scale=1.0' name='viewport'>
-  <!-- Define key words for search engine -->
-  <meta content='Travel, Singapore, Hotels,Flights, Travel plans' name='keywords'>
- <!-- Define a description of our web page -->
-  <meta content='Travel agent that provides various and reliable service' name='description'>
-  <!-- Define the author of a page -->
-  <meta content='Lin Lixian' name='author'>
-
- 
+    <meta charset='utf-8'>
+    <title>SGTravel!</title>
+    <!-- to make it fit the screen on phone/tablet -->
+    <meta content='width=device-width, initial-scale=1.0' name='viewport'>
+    <!-- Define key words for search engine -->
+    <meta content='Travel, Singapore, Hotels,Flights, Travel plans' name='keywords'>
+    <!-- Define a description of our web page -->
+    <meta content='Travel agent that provides various and reliable service' name='description'>
+    <!-- Define the author of a page -->
+    <meta content='Lin Lixian' name='author'>
 
 
-  <!-- Style -->
-  <link rel='stylesheet' href='css/style.css' type='text/css' media='all' />
-  <!-- <link href='css/font-awesome.css' rel='stylesheet'> -->
-  <!-- Default-JavaScript-File --> <script type='text/javascript' src='js/jquery.min.js'></script>
+    <!-- Style -->
+    <link rel='stylesheet' href='css/style.css' type='text/css' media='all'/>
+    <!-- <link href='css/font-awesome.css' rel='stylesheet'> -->
+    <!-- Default-JavaScript-File -->
+    <script type='text/javascript' src='js/jquery.min.js'></script>
 
-   <!-- Bootstrap CSS File -->
+    <!-- Bootstrap CSS File -->
     <link href='lib/bootstrap/css/bootstrap.min.css' rel='stylesheet'>
 
     <!-- Libraries CSS Files -->
@@ -49,11 +48,11 @@
 
     <div class='container-fluid'>
 
-      <div id='logo' class='pull-left'>
-        <h1><a href='#search' class='scrollto'>SGTravel</a></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-         <!-- <a href='#intro'><img src='images/SGTravelLogo.png' alt=''height='5' width='5' title='' /></a> -->
-      </div>
+        <div id='logo' class='pull-left'>
+            <h1><a href='#search' class='scrollto'>SGTravel</a></h1>
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <!-- <a href='#intro'><img src='images/SGTravelLogo.png' alt=''height='5' width='5' title='' /></a> -->
+        </div>
 
         <nav id='nav-menu-container'>
             <ul class='nav-menu'>
@@ -63,15 +62,15 @@
             </ul>
         </nav><!-- #nav-menu-container -->
     </div>
-  </header><!-- #header -->
+</header><!-- #header -->
 
 
 <!--=================
   Empty Section for Login/register
   =================-->
 <section>
-  <div class='top'>
-  </div>
+    <div class='top'>
+    </div>
 
 </section>
 
@@ -155,34 +154,35 @@
                                     <form method='get' class='agile_form' action='search_vacation'>
 
 
-                    <div class='list_agileits_w3layouts'>
-                      <div class='section_class_agileits sec-left'>
-                        <select type='text' name= 'startCity'>
-                         <option value ='0' >Departure City: All</option>
-                                     <option value='Singapore'>Singapore</option>
-                                     <option value='Beijing'>Beijing</option>
-                                     <option value='Shanghai'>Shanghai</option>
-                                     <option value='New York'>NewYork</option>
-                                     <option value='London'>Londom</option>
-                                     <option value='Sydney'>Sydney</option>
-                                     <option value='Paris'>Paris</option>
-                                     <option value='Tokyo'>Tokyo</option>
-                        </select>
-                      </div>
-                      <div class='section_class_agileits sec-right'>
-                        <select type='text' name= 'city'>
-                          <option value = '0'>Destination City: All</option>
-                           <option value = 'Beijing'>Beijing</option>
-                                     <option value = 'Shanghai'>Shanghai</option>
-                                     <option value = 'London'>London</option>
-                                     <option value = 'New York'>New York</option>
-                                     <option value='Sydney'>Sydney</option>
-                                     <option value='Paris'>Paris</option>
-                                     <option value='Tokyo'>Tokyo</option>
-                        </select>
-                      </div>
-                      <div class='clear'></div>
-                    </div>
+                                        <div class='list_agileits_w3layouts'>
+                                            <div class='section_class_agileits sec-left'>
+                                                <select type='text' name='startCity'>
+                                                    <option value='0'>Departure City: All</option>
+                                                    <option value='Singapore'>Singapore</option>
+                                                    <option value='Beijing'>Beijing</option>
+                                                    <option value='Shanghai'>Shanghai</option>
+                                                    <option value='New York'>NewYork</option>
+                                                    <option value='London'>Londom</option>
+                                                    <option value='Sydney'>Sydney</option>
+                                                    <option value='Paris'>Paris</option>
+                                                    <option value='Tokyo'>Tokyo</option>
+                                                </select>
+                                            </div>
+                                            <div class='section_class_agileits sec-right'>
+                                                <select type='text' name='city'>
+                                                    <option value='0'>Destination City: All</option>
+                                                    <option value='Singapore'>Singapore</option>
+                                                    <option value='Beijing'>Beijing</option>
+                                                    <option value='Shanghai'>Shanghai</option>
+                                                    <option value='London'>London</option>
+                                                    <option value='New York'>New York</option>
+                                                    <option value='Sydney'>Sydney</option>
+                                                    <option value='Paris'>Paris</option>
+                                                    <option value='Tokyo'>Tokyo</option>
+                                                </select>
+                                            </div>
+                                            <div class='clear'></div>
+                                        </div>
 
 
                                         <input placeholder='Start date' class='date' id='datepicker1' type='text'
@@ -203,7 +203,7 @@
                                             <div class='clear'></div>
                                         </div>
 
-                                        <div class='submit'>
+                                        <div class='button' align="left" style="width: 200%">
                                             <input type='submit' value='Search Vacation Plan'>
                                         </div>
 
@@ -217,15 +217,12 @@
                                 <div class='register agileits'>
                                     <form method='get' class='agile_form' action='search_hotel'>
 
-
                                         <div class='list_agileits_w3layouts'>
                                             <div class='section_class_agileits sec-left'>
-                                                <select>
+                                                <select type='text' name='destinationCity'>
                                                     <option value='0'>Destination City</option>
-                                                    <option value='Beijing'>Beijing</option>
                                                     <option value='Singapore'>Singapore</option>
-                                                    <option value='Beijing'>Beijing</
-                                                    option>
+                                                    <option value='Beijing'>Beijing</option>
                                                     <option value='Shanghai'>Shanghai</option>
                                                     <option value='New York'>NewYork</option>
                                                     <option value='London'>London</option>
@@ -236,11 +233,11 @@
                                             </div>
 
                                             <div class='section_class_agileits sec-right'>
-                                                <select>
-                                                    <option value='0'>Rooms</option>
-                                                    <option value='1'>Single Room</option>
-                                                    <option value='3'>Double Room</option>
-                                                    <option value='2'>Suit Room</option>
+                                                <select type="text" name='room'>
+                                                    <option value='0'>Room Type</option>
+                                                    <option value='Single Room'>Single Room</option>
+                                                    <option value='Double Room'>Double Room</option>
+                                                    <option value='Suite Room'>Suite Room</option>
 
                                                 </select>
                                             </div>
@@ -249,23 +246,24 @@
                                         </div>
 
                                         <input placeholder='Check in date' class='date' id='datepicker3' type='text'
-                                               value='' onfocus='this.value = '';' onblur='if (this.value == '')
+                                               name='inDate' value='' onfocus='this.value = '';' onblur='if (this.value
+                                        == '')
                                         {this.value = '';}' required=''/>
                                         <input placeholder='Check out date' class='date' id='datepicker4' type='text'
-                                               value='' onfocus='this.value = '';' onblur='if (this.value == '')
+                                               name='outDate' value='' onfocus='this.value = '';' onblur='if (this.value
+                                        == '')
                                         {this.value = '';}' required=''/>
-
 
                                         <div class='list_agileits_w3layouts'>
                                             <div class='section_class_agileits sec-left'>
-                                                <input placeholder='Number of Travellers' class='num' type='number'
-                                                       min='0' name='numTravellers'/>
+                                                <input placeholder='Number of Rooms' class='num' type='number'
+                                                       min='0' name='numRooms'/>
                                             </div>
 
                                             <div class='clear'></div>
                                         </div>
 
-                                        <div class='submit'>
+                                        <div class='button' align="left" style="width: 200%">
                                             <input type='submit' value='Search Hotel'>
                                         </div>
                                     </form>
@@ -311,12 +309,9 @@
 
 
                                         <input placeholder='Departure date' class='date' id='datepicker5' type='text'
-                                               name='departureDate' value='' onfocus='this.value = '';' onblur='if (this.value == '')
+                                               name='departureDate' value='' onfocus='this.value = '';' onblur='if
+                                        (this.value == '')
                                         {this.value = '';}' required=''/>
-<!--                                        <input placeholder='Return date' class='date' id='datepicker6' type='text'-->
-<!--                                               name='arrivalDate' value='' onfocus='this.value = '';' onblur='if (this.value == '')-->
-<!--                                        {this.value = '';}' required=''/>-->
-
 
                                         <div class='list_agileits_w3layouts'>
                                             <div class='section_class_agileits sec-left'>
@@ -327,7 +322,7 @@
                                             <div class='clear'></div>
                                         </div>
 
-                                        <div class='submit'>
+                                        <div class='button' align="left" style="width: 200%">
                                             <input type='submit' value='Search Flight'>
                                         </div>
                                     </form>
@@ -350,69 +345,69 @@
             <p></p>
         </header>
 
-<!-- <<<<<<< HEAD -->
+        <!-- <<<<<<< HEAD -->
         <div class='row hotdeals-cols'>
 
-          <div class='container'>
-            <div class='hotdeals-col'>
-              <div class='img'>
-                <!-- <img src='images/travel/thai.jpg' class='img-fluid'></img> -->
-<!-- ======= -->
-        <div class="row hotdeals-cols">
-<!-- >>>>>>> 1dba85a69fc54230e17ee87a9962006dac3b85a6 -->
+            <div class='container'>
+                <div class='hotdeals-col'>
+                    <div class='img'>
+                        <!-- <img src='images/travel/thai.jpg' class='img-fluid'></img> -->
+                        <!-- ======= -->
+                        <div class="row hotdeals-cols">
+                            <!-- >>>>>>> 1dba85a69fc54230e17ee87a9962006dac3b85a6 -->
 
-          <div class="col-md-4 wow fadeInUp">
-            <div class="hotdeals-col">
-              <div class="img">
-                <img src="images/travel/thailand.png" alt="lala" width='42' height='420'/>
-               </div>
-            
-              <h2 class='title'><a href='thailandPlan.html'>5 Days Thailand Tour</a></h2>
-              <p>
-               Visit Cities: Bangkok, Chiang Mai, Pattaya <br/>
-               Departure Cities: London <br/>
-               Duration: 5 days  <br/>
-               Price: $850 <br/>
-              </p>
-            </div>
-          </div>
+                            <div class="col-md-4 wow fadeInUp">
+                                <div class="hotdeals-col">
+                                    <div class="img">
+                                        <img src="images/travel/thailand.png" alt="lala" width='42' height='420'/>
+                                    </div>
 
-          <div class='col-md-4 wow fadeInUp' data-wow-delay='0.1s'>
-            <div class='hotdeals-col'>
-              <div class='img'>
-<!-- <<<<<<< HEAD -->
-                <img src='images/travel/sh.png' width='42' height='420'></img>
-<!-- ======= -->
-                <!-- <img src='images/travel/shanghai.jpg' alt='lalla' class='img-fluid'> -->
-<!-- >>>>>>> 1dba85a69fc54230e17ee87a9962006dac3b85a6 -->
+                                    <h2 class='title'><a href='thailandPlan.html'>5 Days Thailand Tour</a></h2>
+                                    <p>
+                                        Visit Cities: Bangkok, Chiang Mai, Pattaya <br/>
+                                        Departure Cities: London <br/>
+                                        Duration: 5 days <br/>
+                                        Price: $850 <br/>
+                                    </p>
+                                </div>
+                            </div>
 
-              </div>
-              <h2 class='title'><a href='chinaPlan.html'>7 Days China Tour</a></h2>
-              <p>
-                Visit Cities: Shanghai,Beijing, Tianjin<br/>
-                Departure Cities: Singapore <br/>
-                Duration: 4 days  <br/>
-                Price: $900 <br/>
+                            <div class='col-md-4 wow fadeInUp' data-wow-delay='0.1s'>
+                                <div class='hotdeals-col'>
+                                    <div class='img'>
+                                        <!-- <<<<<<< HEAD -->
+                                        <img src='images/travel/sh.png' width='42' height='420'></img>
+                                        <!-- ======= -->
+                                        <!-- <img src='images/travel/shanghai.jpg' alt='lalla' class='img-fluid'> -->
+                                        <!-- >>>>>>> 1dba85a69fc54230e17ee87a9962006dac3b85a6 -->
+
+                                    </div>
+                                    <h2 class='title'><a href='chinaPlan.html'>7 Days China Tour</a></h2>
+                                    <p>
+                                        Visit Cities: Shanghai,Beijing, Tianjin<br/>
+                                        Departure Cities: Singapore <br/>
+                                        Duration: 4 days <br/>
+                                        Price: $900 <br/>
 
                                     </p>
                                 </div>
                             </div>
 
-          <div class='col-md-4 wow fadeInUp' data-wow-delay='0.2s'>
-            <div class='hotdeals-col'>
-              <div class='img'>
-                <img src='images/travel/usa.png' width='42' height='420'></img>
+                            <div class='col-md-4 wow fadeInUp' data-wow-delay='0.2s'>
+                                <div class='hotdeals-col'>
+                                    <div class='img'>
+                                        <img src='images/travel/usa.png' width='42' height='420'></img>
 
-              </div>
-              <h2 class='title'><a href='usPlan.html'>15 Days United States Tour</a></h2>
-              <p>
-                Visit Cities: NY, Chicago, Philadelphia, Boston, Washington <br/>
-                Departure Cities: Shanghai<br/>
-                Duration: 15 days  <br/>
-                Price: $2000 <br/>
-              </p>
-            </div>
-          </div>
+                                    </div>
+                                    <h2 class='title'><a href='usPlan.html'>15 Days United States Tour</a></h2>
+                                    <p>
+                                        Visit Cities: NY, Chicago, Philadelphia, Boston, Washington <br/>
+                                        Departure Cities: Shanghai<br/>
+                                        Duration: 15 days <br/>
+                                        Price: $2000 <br/>
+                                    </p>
+                                </div>
+                            </div>
 
                         </div>
 
@@ -423,8 +418,6 @@
 <!--==========================
     Footer
   ============================-->
-
-
 
 
 <!--start-date-piker-->
