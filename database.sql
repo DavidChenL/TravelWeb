@@ -76,12 +76,13 @@ drop table if exists User;
 
 drop table if exists Users;
 
-create table Users
+create table User
 	(
-		username char(16) not null,
-		password char(41) not null,
+		username varchar(16) not null,
+		password varchar(41) not null,
 		primary key (username)
 	);
+insert into User values('llx','xxxx');
 
 drop table if exists Plan_Users;
 
@@ -114,6 +115,7 @@ create table Cart
         qty  int,
         img varchar(200)
       );
+
 #Plan
 #planID INT, planTitle varchar(50), duration INT,  remainingSeat INT, country varchar(50), plan_detail varchar(200)
 
