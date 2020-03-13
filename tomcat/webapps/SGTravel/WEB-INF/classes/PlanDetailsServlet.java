@@ -87,7 +87,7 @@ public class PlanDetailsServlet extends HttpServlet {  // JDK 6 and above only
 
          out.println("<div class = 'container'><form method='post' action='checkout'>");
          out.println("<input type='hidden' name='itemID' value=" + itemID+ " />");
-         out.println("<div class = 'button' align='center'><input type='submit' value='Join'></div>");
+         out.println("<div class = 'button' align='center' style='color: #6a92cd'><input type='submit' value='Join'></div>");
          out.println("</form></div>");
 
 
@@ -102,7 +102,7 @@ public class PlanDetailsServlet extends HttpServlet {  // JDK 6 and above only
             out.println("<br/> Remaining Seats: "+rset.getInt("remainingSeat")+"</p>");
             out.println("<form method='post' action='detail'>");
             out.println("<input type='hidden' name='itemID' value=" + rset.getInt("itemID") + " />");
-            out.println("<div class = 'button' align='center'><input type='submit' value='Check'></div>");
+            out.println("<div class = 'button' align='center' style='color: #6a92cd'><input type='submit' value='Check'></div>");
             out.println("</form>");
             out.println("</div></div></div>");
          }

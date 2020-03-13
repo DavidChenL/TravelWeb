@@ -55,7 +55,7 @@ public class AccountManagementServlet extends HttpServlet {  // JDK 6 and above 
                out.println("</p>");
                out.println("<form method='post' action='detail'>");
                out.println("<input type='hidden' name='itemID' value=" + rset.getInt("itemID") + " />");
-               out.println("<div class = 'button' align='center'><input type='submit' value='Join'></div>");
+               out.println("<div class = 'button' align='center' style='color: #6a92cd'><input type='submit' value='Join'></div>");
                out.println("</form></div><br/>");
                 ++count;
             }

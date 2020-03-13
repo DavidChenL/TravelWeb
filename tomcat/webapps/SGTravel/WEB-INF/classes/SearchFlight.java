@@ -120,7 +120,7 @@ public class SearchFlight extends HttpServlet {  // JDK 6 and above only
 //                out.println("<div class = 'button' align='center'><input type='submit' value='Check' ></div></form>");
                 out.println("<form method='post' action='checkout'>");
                 out.println("<input type='hidden' name='flightID' value=" + rset.getInt("flightID") + " />");
-                out.println("<div class = 'button' align='center'><input type='submit' value='Book' ></div>");
+                out.println("<div class = 'button' align='center' style='color: #6a92cd'><input type='submit' value='Book' ></div>");
                 out.println("</form>");
                 out.println("</div></div>");
                 ++count;
